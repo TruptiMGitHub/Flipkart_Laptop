@@ -7,15 +7,15 @@ Data Preprocessing: Raw laptop data is cleaned and normalized for consistency.
 Structure and clean:
 Extract RAM, storage, price, GPU, etc. from specs.
 
-2.Embedding Generation: Each laptop's specifications are converted into vector embeddings using sentence-transformers.
+3.Embedding Generation: Each laptop's specifications are converted into vector embeddings using sentence-transformers.
 Optional: Create embeddings for product descriptions.
 
 
-3. Build a Vector Store (RAG)
+4. Build a Vector Store (RAG)
 Indexing: Embeddings are stored in a FAISS index to facilitate efficient similarity searches.
 Use FAISS or Chroma to enable similarity search.
 
-4.User Query Handling: User inputs are embedded and compared against the FAISS index to retrieve the most relevant laptops
+5.User Query Handling: User inputs are embedded and compared against the FAISS index to retrieve the most relevant laptops
 
-5.LLM Response Generation: For each recommended laptop, the LLM provides a detailed explanation highlighting its suitability based on the user's preferences.
-5.User Interaction - Streamlit
+6.LLM Response Generation: For each recommended laptop, the LLM provides a detailed explanation highlighting its suitability based on the user's preferences.
+7.User Interaction - Streamlit
